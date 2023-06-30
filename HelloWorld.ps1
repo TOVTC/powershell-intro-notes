@@ -1,10 +1,17 @@
-﻿# Write-Host prints to the console, automatically adding a new line
+﻿# --- Writing To & Reading From Command Line ---
+
+# Write-Host prints to the console, automatically adding a new line
 Write-Host "Hello World"
 Write-Host "Hello again"
 
 # You can add parameters to cmdlets, such as NoNewLine
 Write-Host "Hello World" -NoNewLine
 Write-Host "Hello again"
+
+# Read-Host waits for user input
+# The -Prompt flag displays a line of text to prompt the user to enter information
+$FavSystem = Read-Host -Prompt "What is your favourite Nintendo gaming system?"
+$FavSystem
 
 # --- Piping ---
 
