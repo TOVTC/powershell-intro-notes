@@ -60,3 +60,45 @@ $FavCharacter | Select-Object -Property *
 
 # To retrieve all methods that can be applied to the object
 Get-Member -InputObject $FavCharacter
+
+# --- Arrays ---
+
+$Jedi = @("Obi Wan Kenobi", "Luke Skywalker", "Yoda", "Mace Windu" )
+$Jedi
+$Jedi.GetType()
+
+# Access values on arrays using square bracket syntax
+$Jedi[0]
+$Jedi[1]
+$Jedi[2]
+
+# Access properties of variables
+$Jedi[2].Length
+$Jedi[1].Length
+
+# Add values to arrays
+$Jedi += "Qui-Gon Jin"
+$Jedi
+$Jedi[4]
+
+# --- Hash Tables ---
+
+$FellowshipBeta = @{key1 = "item1"; key2 = "item2"}
+$FellowshipBeta
+
+$Fellowship = @{"Wizard" = "Gandalf"; "Hobbit" = "Frodo"; "Elf" = "Legolas"}
+
+# Add values to a hash table
+$Fellowship.Add("Dwarf", "Gimli")
+
+# Update an entry
+$Fellowship.Set_Item("Dwarf", "Bilbo")
+$Fellowship
+
+# Access values using either dot or square bracket notation
+$Fellowship."Dwarf"
+$Fellowship["Dwarf"]
+
+# Remove an entry
+$Fellowship.Remove("Dwarf")
+$Fellowship

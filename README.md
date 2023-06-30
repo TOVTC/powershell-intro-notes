@@ -2,7 +2,7 @@
 ```
 $PSVersionTable.PSVersion
 ```
-*   Checks version of PS
+*   Checks version of PowerShell
 *   PowerShell does pretty much what Command Prompt does
     *   The biggest difference is that there are specialized functions in PowerShell
 *   Press tab to autocomplete text
@@ -30,12 +30,12 @@ Get-Command -CommandTyper Cmdlet
 ```
 Get-Help *
 ```
-    *   Or you can run a Get command to retrieve help articles related to a specific cmdlet
-    *   The -Detailed flag can show additional information (but it might still only display part of the help file if it is not downloaded/available on your computer)
+*   Or you can run a Get command to retrieve help articles related to a specific cmdlet
+*   The -Detailed flag can show additional information (but it might still only display part of the help file if it is not downloaded/available on your computer)
 ```
 Get-Help Write-Host -Detailed
 ```
-    *   or
+*   or
 ```
 Get-Help Write-Host -Full
 ```
