@@ -1,6 +1,5 @@
 ﻿# --- Functions ---
 
-# Basic Function
 function Test-SpaceX-basic {
     ping spacex.com
 }
@@ -8,7 +7,8 @@ function Test-SpaceX-basic {
 # You can even call this function directly in the console
 # Test-SpaceX-basic
 
-# With Parameter Binding
+# --- Parameter Binding ---
+
 function Test-SpaceX-intermediate {
     # The syntax for setting parameters and accepting arguments
     # Sets the number of pings
@@ -28,7 +28,8 @@ function Test-SpaceX-intermediate {
 # Generates an error if no -PingCount value is specified
 # Test-SpaceX-intermediate -PingCount 10
 
-# With CmdletBindings
+# --- CmdletBindings ---
+
 function Test-SpaceX-advanced {
     [CmdletBinding()]
     param(
